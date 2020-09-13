@@ -9,7 +9,7 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect("mongodb+srv://dbuser:yti050910@contact-book.7j3c6.mongodb.net/");
+mongoose.connect("mongodb+srv://<username>:<password>@contact-book.7j3c6.mongodb.net/");
 var db = mongoose.connection;
 db.once('open', function() {
     console.log('DB connected');
